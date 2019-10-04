@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  font-family: Arial;
+  line-height: 2em;
+}
+.container{
+  margin: auto;
+  line-height:2;
+  font-size: 30px;
+  overflow: hidden;
+  width: 95%;
+}
+#mainheader{
+  color: white;
+  background-color: green;
+}
+h2{
+  font-size: 50px;
+  margin-left: 20px;
+  color: red;
+}
+h5{
+  font-size: 20px;
+  margin-left: 20px;
+  color: green;
+}
+h4{
+  font-size: 20px;
+  margin-left: 20px;
+  color: green;
+}
+h3{
+  font-size: 20px;
+  margin-left: 20px;
+  color: green;
+}

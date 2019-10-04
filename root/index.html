@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <header id="mainheader">
+      <div class="container">
+        Bootless root with Magisk and MTK-SU
+      </div>
+    </header>
+    <body>
+      <section>
+        <h2>I am not responsible for your device!!!</h2>
+        <h3>REQUIREMENTS</h3>
+        <ul>
+          <li>A device compatible with mtk-su</li>
+          <li>Magisk not installed on device</li>
+        </ul>
+        <h4>LIMITATIONS</h4>
+        <ul>
+          <li>Cannot modify boot partition unless bootloader is unlocked</li>
+          <li>Cannot modify system/vendor partitions unless boot partition is altered</li>
+          <li>Your mileage may vary with Android 9 or higher</li>
+        </ul>
+        <h5>INSTRUCTIONS</h5>
+        <ul>
+          <li>Download and install <a href="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445">Latest-MagiskManager apk</a></li>
+          <li>Download and install <a href="https://drive.google.com/open?id=1p_lpEx9Doi20GP55Sy_AoCGOj7rTnqIW">Init.d-scripts-support.apk</a></li>
+          <li>Download <a href="https://drive.google.com/open?id=1O_HvugZh1EJ1mmOFUAeueqXBwbyuS5bI">init.d.zip</a> and extract to internal storage</li>
+          <li>In MagiskManager, go to Settings -> Update Channel -> Custom and enter this URL: <b>https://raw.githubusercontent.com/topjohnwu/magisk_files/841e978604f989d04549013cd4dcc7e34aea5288/stable.json</b>></li>
+          <li>Set up Init.d app like this:
+            <ul>
+              <li>Try to acquire root privileges: <b>unchecked</b></li>
+              <li>Run scripts at boot time: <b>checked</b></li>
+              <li>Execution delay: <b>No delay</b></li>
+              <li>Selected folder: <b>/storage/emulated/0/init.d</b></li>
+              <li>Execute all files: <b>unchecked</b></li>
+            </ul>
+          </li>
+          <li>Reboot and go to Init.d app tap 'Run scripts now'. The process will take a few seconds before telling you that 1 script has finished.</li>
+          <li>When you open Magisk Manager, it will prompt you with Requires Additional Setup. On this window, you can tap Yes. This is safe. Make sure that you have done step 5 before doing this.</li>
+          <li>Turn off update checking in Magisk Manager</li>
+        </ul>
+      </section>
+    </body>
+  </body>
+</html>
